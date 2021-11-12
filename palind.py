@@ -5,14 +5,14 @@
 #---------------------O(1)-----------------------#
 
 def palind(string):
-    left_p = len(string) - 1
+    rigth_p = len(string) - 1
 
-    for rigth_p in range(len(string)):
-        if string[rigth_p] != string[left_p]:
+    for left_p in range(len(string)):
+        if string[left_p] != string[rigth_p]:
             return False
-        if rigth_p == left_p:
+        if left_p == rigth_p:
             return True
-        left_p -= 1
+        rigth_p -= 1
     return True
 
 #------------------------TEST-----------------------#
